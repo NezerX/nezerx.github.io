@@ -11,6 +11,7 @@ body {
 	right: 0;
 	text-align: center;
 	background-color: #111111;
+	z-index: 1;
 }
 .nav a {
 	transition: 0.3s;
@@ -32,7 +33,10 @@ body {
 	font-size: 28px;
 }
 section {
+	display: flex;
 	min-height: 10vh;
+	flex-direction: column;
+	justify-content: center;
 	padding-top: 60px;
 }
 .title {
@@ -42,17 +46,17 @@ section {
 	text-transform: uppercase;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
-#about-me-link-section {
+#about-a-link-section {
 	text-align: center;
 }
-#about-me-link {
+#about-a-link {
 	font-size: 38px;
 	text-decoration: none;
 	color: #f8f8f8;
 	font-family: 'Istok Web', sans-serif;
 	transition: 1s;
 }
-#about-me-link:hover {
+#about-a-link:hover {
 	color: #4b3aff;
 	transition: 1s;
 }
@@ -73,13 +77,14 @@ main {
 	margin: auto;
 	transition: 1.5s
 }
-.card:hover, #project-a-link:hover {
+.card:hover,
+.card:hover #project-a-link {
 	color: #0071aa;
 	transition: 1s;
 	transform: translateY(-20px);
 }
 #project-a-link {
-	color: #444444;
+	color: #111111;
 	text-decoration: none;
 	transition: 1s;
 }
@@ -96,3 +101,19 @@ main {
 .contact-link:hover {
 	color: #65bbed;
 }
+#langnav {
+	position: absolute;
+	float: left;
+	left: 0;
+}
+#about-a-link {
+	text-decoration: none;
+	color: #111111;
+	font-family: 'Istok Web', sans-serif;
+	transition: 1s;
+}
+.card:hover,
+.card:hover #about-a-link {
+	color: #0071aa;
+	transition: 1s;
+	transform: translateY(-20px);
