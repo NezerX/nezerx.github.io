@@ -1,0 +1,9 @@
+@media screen and (max-width: 768px) {
+	.nav a {
+		font-size: 12px;
+	}
+
+	.card {
+		width: 100%;
+	}
+}

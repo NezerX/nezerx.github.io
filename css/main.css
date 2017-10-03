@@ -75,7 +75,8 @@ main {
 	font-weight: 900;
 	border-radius: 10px;
 	margin: auto;
-	transition: 1.5s
+	transition: 1.5s;
+	box-sizing: border-box;
 }
 .card:hover,
 .card:hover #project-a-link {
@@ -100,11 +101,6 @@ main {
 }
 .contact-link:hover {
 	color: #65bbed;
-}
-#langnav {
-	position: absolute;
-	float: left;
-	left: 0;
 }
 #about-a-link {
 	text-decoration: none;
