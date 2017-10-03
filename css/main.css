@@ -18,7 +18,7 @@ body {
 	color: #f8f8f8;
 	font-size: 14px;
 	font-weight: 900;
-	padding: 20px 30px;
+	padding: 20px 10px;
 	display: inline-block;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -113,3 +113,7 @@ main {
 	color: #0071aa;
 	transition: 1s;
 	transform: translateY(-20px);
+}
+footer {
+	text-align: center;
+}
