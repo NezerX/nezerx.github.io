@@ -4,7 +4,23 @@ body {
 	background-color: #111111;
 	font-family: 'Istok Web', sans-serif;
 }
+body::after { 	
+	top: -2.5%;
+	left: -2.5%;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	content: "";
+	width: 105%;
+	height: 105%;
+	display: block;
+	position: fixed;
+	-webkit-filter: grayscale(100%) blur(15px) brightness(50%);
+    filter: grayscale(100%) blur(15px) brightness(50%); /* Чёрно-белое изображение */
+	background-image: url(https://i1.wallbox.ru/wallpapers/main/201111/9dab633d43b15f04aaca165af610c417.jpg);
+}
 .nav {
+	opacity: 0.7;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -34,7 +50,7 @@ body {
 }
 section {
 	display: flex;
-	min-height: 100vh;
+	min-height: 20vh;
 	flex-direction: column;
 	justify-content: center;
 	padding-top: 60px;
@@ -65,6 +81,7 @@ main {
 	margin: auto;
 }
 .card {
+	transition: 0.7;
 	width: 400px;
 	padding: 30px 10px;
 	color: #111111;
@@ -116,4 +133,17 @@ main {
 }
 footer {
 	text-align: center;
+}
+.nav {
+  animation-duration: 1s;
+  animation-name: transitionBless;
+}
+@keyframes transitionBless {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.7;
+  }
 }
